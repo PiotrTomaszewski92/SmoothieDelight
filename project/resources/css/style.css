@@ -89,6 +89,73 @@ body{
 
 /*==END===HAMBURGER========*/
 
+
+.main-section .video-element{
+    width:100%;
+}
+
+.main-section .main-content{
+    position: absolute;
+    width: 100%;
+    margin-top: 5em;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-weight:bold;
+    background: rgba(255,255,255,0.5);
+    color: #565656;
+}
+
+.main-section .main-content h1{
+    padding: 0.3em 0.3em 0 0.3em;
+}
+
+.main-section .main-content button{
+    font-size: 1em;
+    margin-bottom: 1em;
+    padding: 0.5em;
+}
+
+.sm-column-reverse {
+    flex-direction: column-reverse;
+}
+
+@media (max-width: 700px){
+    .main-section{
+        background-size: cover;
+        background-image: url("../images/video.png");
+        background-position: center center;
+    }
+
+    .main-section .video-element{
+        visibility: hidden;
+        object-fit: contain;
+    }
+}
+
+.header{
+    padding: 1em;
+    width: 100%;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.healthy-header{
+    background-color: #f5df7b;
+}
+
+.two-columns-rows .row .text{
+    padding: 2em;
+}
+
+.two-columns-rows img{
+    width: 100%;
+}
+
+.two-columns-rows p, .smoothie-gallery p{
+    text-align: justify;
+}
+
 .icon1, .icon2, .icon3, .icon4, .icon5, .icon6{
     background: url('../images/health_icons.png') no-repeat;
     background-position: -220px -190px;
