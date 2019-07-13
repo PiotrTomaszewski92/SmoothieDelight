@@ -156,6 +156,28 @@ body{
     text-align: justify;
 }
 
+.smoothie-experience-header{
+    background-color: #7b91f5;
+    color: #ffffff;
+    text-align: center;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.smoothie-gallery{
+    background-color: #dde3fe;
+}
+
+.smoothie-gallery p{
+    padding: 3em;
+}
+
+.carousel{
+    padding-right: 0;
+}
+
 .icon1, .icon2, .icon3, .icon4, .icon5, .icon6{
     background: url('../images/health_icons.png') no-repeat;
     background-position: -220px -190px;
@@ -163,3 +185,4 @@ body{
     width: 165px;
     border: 1px solid black;
 }
+
