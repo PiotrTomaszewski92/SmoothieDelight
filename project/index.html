@@ -14,8 +14,8 @@
     <a href="#" title="Go back to homepage" class="page-logo">
         <img src="resources/images/logo.svg">
     </a>
-    <nav>
-        <ul>
+    <nav class="page-nav">
+        <ul class="navigation-menu">
             <li><a href="#healthy-delicious" title="Healthy and delicious">Healthy & Delicious</a></li>
             <li><a href="#smoothies" title="Smoothies">Check our smoothie</a></li>
             <li><a href="#lose-weights" title="Lose weight">Lose weight</a></li>
@@ -23,8 +23,12 @@
             <li><a href="#stay-alert" title="Stay alert">Stay alert</a></li>
             <li><a href="#newsletter" title="Sign up">Sign up</a></li>
         </ul>
-        <button type="button">
-            hamburger
+        <button type="button" title="Open menu" class="hamburger">
+            <div class="button_container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
         </button>
     </nav>
 </header>
