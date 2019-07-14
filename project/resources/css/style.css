@@ -252,4 +252,78 @@ body{
     background-position: -218px -376px;
 }
 
+.container.calculator{
+    border: 1px solid #ecc313;
+    padding: 1em;
+}
+
+.price-calculator>.form-item{
+    text-align: center;
+    margin-top:1em;
+    border-top:1px dashed #ecc313;
+    padding-top: 1em;
+}
+
+.price-calculator>.form-item:first-child{
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.item-label{
+    font-size: 2em;
+}
+
+.kcal-price-selector{
+    margin: 4rem 0;
+}
+
+.kcal-price-selector>button, .checkbox-radio-options>div>button{
+    background: none;
+    border: 0;
+}
+
+.kcal-price-selector>button>span, .checkbox-radio-options>div>button>span {
+    width: 25px;
+    display: inline-block;
+    height: 25px;
+    border-radius: 25px;
+    background: #efeeee;
+    border: 2px solid #d6d6d6;
+    margin-bottom: -0.4em;
+    transition: all .3s ease;
+}
+
+.kcal-price-selector>button.active>span,
+.checkbox-radio-options>div.active>button>span{
+    background: #ecc313;
+    border-color: #1a1a17;
+}
+
+.checkbox-radio-options.radio div {
+    display: inline-block;
+}
+
+.checkbox-radio-options>div>button>p{
+    display: inline-block;
+}
+
+.form-item.select select{
+    background: #efeeee;
+    border: 2px solid #d6d6d6;
+    padding: 0.5em 2em;
+}
+
+.form-item.select select option{
+    text-align:center;
+}
+
+.form-item.summary div{
+    text-align:right;
+}
+.form-item.summary div.total{
+    font-size: 2em;
+}
+
 
