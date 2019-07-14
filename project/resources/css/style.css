@@ -21,12 +21,14 @@ body{
     background-color: #ffffff;
     box-shadow: -1px 9px 19px -8px rgba(0,0,0,0.5);
 }
-
-.page-header.nav-opened .navigation-menu {
+.page-header.nav-opened .navigation-menu,
+footer .navigation-menu
+{
     display: block;
 }
 
-.page-nav .navigation-menu{
+.page-nav .navigation-menu,
+footer .navigation-menu{
     list-style: none;
     padding: 0;
     margin: 0;
@@ -43,17 +45,20 @@ body{
 }
 
 
-.page-header .page-nav .navigation-menu li{
+.page-header .page-nav .navigation-menu li,
+footer .navigation-menu li{
     border-bottom:1px solid #f5f7f7;
     text-align: center;
     padding: 9px 0;
 }
 
-.page-header .page-nav .navigation-menu li:last-child{
+.page-header .page-nav .navigation-menu li:last-child,
+footer .navigation-menu li:last-child{
     border: none;
 }
 
-.page-header .page-nav .navigation-menu li a{
+.page-header .page-nav .navigation-menu li a,
+footer .navigation-menu li a{
     color: #333;
     text-decoration: none;
     font-size: 1.4rem;
@@ -347,4 +352,66 @@ body{
 p.card-text {
     font-size: 0.7em;
     text-align: justify;
+}
+
+.newsletter-content{
+    background-size: cover;
+    background-color: #ecc313;
+    background-position: center center;
+    background-image: url("../images/video.png");
+}
+
+.newsletter-info, .newsletter-content form{
+    background-color:rgba(51,51,51,0.9);
+}
+
+.newsletter-info{
+    text-align: center;
+    font-size: 3em;
+    color:#dfdfdf;
+    padding:0.5em;
+}
+
+.newsletter-content form small{
+    text-align: center;
+    color:#dfdfdf;
+    padding:1.5em;
+}
+
+.form-row input, .form-row button{
+    height:4em;
+}
+
+.newsletter-content .form-row .btn-primary{
+    width:100%;
+}
+
+.justify-content-center .col-12{
+    margin-top:1em;
+}
+
+
+.logo-footer{
+    display: block;
+    text-align: center;
+    padding: 2em;
+}
+
+.author-info{
+    text-align: center;
+    padding: 1em 0 2em 0;
+    font-size:0.75em;
+    color:#dfdfdf;
+    cursor:text;
+}
+
+.author-info p{
+    margin: 0;
+}
+
+.author-info a{
+    color:#dfdfdf;
+    text-decoration: underline;
+    cursor: pointer;
+
 }
