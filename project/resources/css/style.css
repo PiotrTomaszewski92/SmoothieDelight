@@ -9,6 +9,10 @@ body{
     font-size: 1.6rem;
 }
 
+.row{
+    margin-right: 0;
+}
+
 .page-header {
     position: absolute;
     padding: 5px;
@@ -21,6 +25,7 @@ body{
     background-color: #ffffff;
     box-shadow: -1px 9px 19px -8px rgba(0,0,0,0.5);
 }
+
 .page-header.nav-opened .navigation-menu,
 footer .navigation-menu
 {
@@ -82,6 +87,7 @@ footer .navigation-menu li a{
 
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    /*transform: rotate(-45deg) translate(-9px, 6px);*/
     transform: rotate(-45deg) translate(-10px, 6px);
 }
 
@@ -89,10 +95,14 @@ footer .navigation-menu li a{
 
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    /*transform: rotate(45deg) translate(-8px, -8px);*/
     transform: rotate(45deg) translate(-7px, -3px);
 }
 
 /*==END===HAMBURGER========*/
+
+
+
 
 
 .main-section .video-element{
@@ -113,12 +123,18 @@ footer .navigation-menu li a{
 
 .main-section .main-content h1{
     padding: 0.3em 0.3em 0 0.3em;
+    font-family: fantasy;
+    text-transform: uppercase;
 }
 
 .main-section .main-content button{
     font-size: 1em;
     margin-bottom: 1em;
     padding: 0.5em;
+    background-color: #bced91;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
 }
 
 .sm-column-reverse {
@@ -145,6 +161,8 @@ footer .navigation-menu li a{
     margin: 0;
 }
 
+/*Health and delicius */
+
 .healthy-header{
     background-color: #f5df7b;
 }
@@ -161,6 +179,11 @@ footer .navigation-menu li a{
     text-align: justify;
 }
 
+/* END Health and delicious */
+
+
+/*  Smoothie delicious */
+
 .smoothie-experience-header{
     background-color: #7b91f5;
     color: #ffffff;
@@ -170,6 +193,8 @@ footer .navigation-menu li a{
     align-items: center;
     justify-content: center;
 }
+
+
 
 .smoothie-gallery{
     background-color: #dde3fe;
@@ -182,6 +207,11 @@ footer .navigation-menu li a{
 .carousel{
     padding-right: 0;
 }
+/* END Smoothie delicious */
+
+
+/*  numbers */
+
 .numbers-header{
     border-top: 10px dotted #a6fc93;
     margin-top: 2em;
@@ -256,6 +286,12 @@ footer .navigation-menu li a{
 .icon6 {
     background-position: -218px -376px;
 }
+
+
+/*  END numbers */
+
+
+/*    CALCULATOR    */
 
 .container.calculator{
     border: 1px solid #ecc313;
@@ -332,6 +368,13 @@ footer .navigation-menu li a{
 }
 
 
+/*  END  CALCULATOR    */
+
+
+
+
+/*      Alert       */
+
 .alert-header{
     color: #ffb1b1;
     margin-top: 2em;
@@ -353,6 +396,11 @@ p.card-text {
     font-size: 0.7em;
     text-align: justify;
 }
+
+/*   END    Alert       */
+
+
+/*          Newsletter        */
 
 .newsletter-content{
     background-size: cover;
@@ -390,6 +438,11 @@ p.card-text {
     margin-top:1em;
 }
 
+/*      END   Newsletter      */
+
+
+/*      footer         */
+
 
 .logo-footer{
     display: block;
@@ -414,4 +467,92 @@ p.card-text {
     text-decoration: underline;
     cursor: pointer;
 
+}
+
+
+/*    END  footer      */
+
+
+@media (min-width: 701px){
+    .main-section .main-content{
+        top: inherit;
+        bottom:0;
+        font-size: 2em;
+        background: rgba(255,255,255,0.8);
+    }
+
+    .main-section .main-content h1{
+        font-size: 2em;
+
+    }
+
+    .healthy-header{margin-top: -0.6rem;}
+
+    .two-columns-rows .row .text{
+        margin-top:auto;
+        margin-bottom:auto;
+        padding:0;
+    }
+
+    footer .navigation-menu li a{
+        font-size: 2rem;
+    }
+    .page-header{
+        text-align: right;
+        background: rgb(226, 226, 226);
+        padding:15px;
+    }
+
+    .page-header .page-logo{
+        position: absolute;
+        display: block;
+    }
+
+    .page-header .page-logo a img{
+        width:150px;
+    }
+
+    .page-header .page-nav{
+        display: inline;
+    }
+
+    .page-header .page-nav .hamburger{
+        display: none;
+    }
+
+    .page-header .navigation-menu{
+        display: inline-block;
+        text-align: right;
+    }
+
+    .page-header .page-nav .navigation-menu li{
+        display: inline-block;
+        border-bottom: 0;
+        cursor: pointer;
+        border-right: 1px solid #565656;
+        -webkit-border-top-right-radius: 5px;
+
+    }
+
+    .page-header .navigation-menu li a{
+        color: #565656;
+        text-decoration: none;
+        font-size: 1.4rem;
+        padding: 0 0.4em;
+    }
+
+    .page-header .navigation-menu li a:hover{
+        text-decoration: underline;
+    }
+
+
+
+
+
+}
+
+@media (min-width: 576px){
+    .justify-content-center .col-12{
+        margin-top:0;
+    }
 }
